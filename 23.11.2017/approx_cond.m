@@ -7,11 +7,10 @@ function[condition, approx] = approx_cond(n)
 end
 
 %!test
-%! source support/assert_convergence.m
-%! source support/benchmark.m;
+%! source support/assert_fundamental.m
 %! source 23.11.2017/approx_cond.m
 %!
-%! [conds, approx] = benchmark_scalar(10:10:200, @approx_cond);
+%! [conds, approx] = arrayfun(@approx_cond, 10:10:200);
 %!
 %! % Verify that the ratio converges to 1
 %! assert_fundamental(conds ./ approx - 1);

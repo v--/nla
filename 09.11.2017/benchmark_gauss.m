@@ -16,9 +16,8 @@ function[t1 t2] = benchmark_gauss(n)
 end
 
 %!test
-%! source support/benchmark.m;
 %! source 09.11.2017/benchmark_gauss.m
 %!
-%! [t1 t2] = benchmark_scalar(20:20:100, @benchmark_gauss);
+%! [t1 t2] = arrayfun(@benchmark_gauss, 20:20:100);
 %!
 %! assert(t1 < t2); % Verify that the Gaussian algorithm without pivoting is faster

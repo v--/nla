@@ -20,9 +20,8 @@ function[t1 t2] = benchmark_gauss_tridiagonal(n)
 end
 
 %!test
-%! source support/benchmark.m;
 %! source 16.11.2017/benchmark_gauss_tridiagonal.m
 %!
-%! [t1 t2] = benchmark_scalar(20:20:100, @benchmark_gauss_tridiagonal);
+%! [t1 t2] = arrayfun(@benchmark_gauss_tridiagonal, 20:20:100);
 %!
 %! assert(t2 < t1); % Verify that the tridiagonal algorithm always runs faster
