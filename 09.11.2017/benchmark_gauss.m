@@ -16,7 +16,7 @@ function[t1 t2] = benchmark_gauss(n)
 end
 
 %!test
-%! source 09.11.2017/benchmark_gauss.m
+%! source 09.11.2017/benchmark_gauss.m;
 %!
 %! [t1 t2] = arrayfun(@benchmark_gauss, 20:20:100);
 %!
