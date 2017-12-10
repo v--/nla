@@ -1,8 +1,8 @@
-source 19.10.2017/lu.m;
+source 19.10.2017/lu_decompose.m;
 
 function[x] = lu_solve(A, b)
     n = size(A, 1);
-    [L U] = lu(A);
+    [L U] = lu_decompose(A);
 
     for k = 1:n - 1
         b(k + 1: n) = b(k + 1: n) - L(k + 1: n, k) * b(k);

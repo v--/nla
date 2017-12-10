@@ -1,4 +1,4 @@
-function[L U] = lu(A)
+function[L U] = lu_decompose(A)
     n = size(A, 1);
     L = eye(n);
     U = A;
@@ -12,9 +12,9 @@ function[L U] = lu(A)
 end
 
 %!test
-%! source 19.10.2017/lu.m;
+%! source 19.10.2017/lu_decompose.m;
 %!
 %! A = [1 4 7; 2 5 8; 3 6 10];
-%! [L U] = lu(A);
+%! [L U] = lu_decompose(A);
 %!
 %! assert(L * U, A);
