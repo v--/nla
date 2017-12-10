@@ -12,3 +12,10 @@ test 16.11.2017/gauss_tridiagonal;
 test 16.11.2017/benchmark_gauss_tridiagonal;
 
 test 23.11.2017/approx_cond;
+
+test 30.11.2017/approx_hilbert_matrix_cond;
+test 30.11.2017/estimate_hilbert_matrix_error;
+test 30.11.2017/estimate_cond;
+
+test 07.12.2017/estimate_growth_factor;
+test 07.12.2017/high_growth_factor;
