@@ -19,3 +19,6 @@ test 30.11.2017/estimate_cond;
 
 test 07.12.2017/estimate_growth_factor;
 test 07.12.2017/high_growth_factor;
+
+test 14.12.2017/jacobi_iteration;
+test 14.12.2017/seidel_iteration;
