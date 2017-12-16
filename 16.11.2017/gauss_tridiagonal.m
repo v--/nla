@@ -6,7 +6,7 @@
 %
 % and f is the right-hand side of the equation Ax = f
 function[x] = gauss_tridiagonal(a, b, c, f)
-    n = size(b, 2);
+    n = length(b);
 
     for k = 1:n - 1
         l(k) = a(k) / b(k);

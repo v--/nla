@@ -1,5 +1,5 @@
 function[L U] = lu_decompose(A)
-    n = size(A, 1);
+    n = length(A);
     L = eye(n);
     U = A;
 

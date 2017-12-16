@@ -3,7 +3,7 @@ function[e] = relative_error(A, y)
 end
 
 function[condition] = estimate_cond(A)
-    n = size(A, 2);
+    n = length(A);
     relative_errors = arrayfun(@() relative_error(A, rand(n, 1)), 1:5);
     condition = norm(A) * max(relative_errors);
 end

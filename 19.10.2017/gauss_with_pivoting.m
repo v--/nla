@@ -1,5 +1,5 @@
 function[L U p] = gauss_with_pivoting_decompose(A)
-    n = size(A, 1);
+    n = length(A);
     L = eye(n);
     U = A;
     p = 1:n - 1;
@@ -22,7 +22,7 @@ function[L U p] = gauss_with_pivoting_decompose(A)
 end
 
 function[x] = gauss_with_pivoting_solve(L, U, p, b)
-    n = size(L, 1);
+    n = length(L);
 
     for k = 1:n - 1
         if p(k) != k

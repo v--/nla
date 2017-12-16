@@ -1,5 +1,5 @@
 function[L] = cholesky(A)
-    n = size(A, 1);
+    n = length(A);
     L = zeros(n, n);
 
     for k = 1:n

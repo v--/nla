@@ -1,5 +1,5 @@
 function[x] = gauss(A, b)
-    n = size(A, 1);
+    n = length(A);
     L = eye(n);
     U = A; % This assignment is really pointless, but it's here for the sake of having L and U.
 

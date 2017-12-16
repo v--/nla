@@ -1,7 +1,7 @@
 source 19.10.2017/lu_decompose.m;
 
 function[x] = lu_solve(A, b)
-    n = size(A, 1);
+    n = length(A);
     [L U] = lu_decompose(A);
 
     for k = 1:n - 1
