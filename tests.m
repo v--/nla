@@ -22,3 +22,5 @@ test 07.12.2017/high_growth_factor;
 
 test 14.12.2017/jacobi_iteration;
 test 14.12.2017/seidel_iteration;
+
+test 21.12.2017/benchmark_seidel;
