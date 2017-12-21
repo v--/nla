@@ -1,4 +1,4 @@
-function [x, iter_count] = jacobi_iteration(A, b, x_initial, tolerance, max_iterations)
+function [x iter_count] = jacobi_iteration(A, b, x_initial, tolerance, max_iterations)
     n = length(b);
     x_old = x_initial;
     x_new = zeros(n, 1);
@@ -24,6 +24,6 @@ end
 %! A = [2 -1 0; -1 2 -1; 0 -1 2];
 %! b = [1; 0; 1];
 %!
-%! [x, iterations] = jacobi_iteration(A, b, [0; 0; 0], 1e-3, 1000);
+%! [x iterations] = jacobi_iteration(A, b, [0; 0; 0], 1e-3, 1000);
 %! assert(x, A \ b, 2e-3);
 %! assert(iterations, 19);
