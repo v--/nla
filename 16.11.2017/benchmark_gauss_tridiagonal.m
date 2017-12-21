@@ -3,7 +3,7 @@ source 16.11.2017/gauss_tridiagonal.m;
 
 % Benchmark the Cholesky decomposition-based algorithm for solving systems of linear equations with
 % the tridiagonal Gaussian algorithm.
-function[t1 t2] = benchmark_gauss_tridiagonal(n)
+function[t_cholesky t_tridiagonal] = benchmark_gauss_tridiagonal(n)
     a = -ones(n-1, 1);
     b = 2 * ones(n, 1);
     c = a;
@@ -12,16 +12,16 @@ function[t1 t2] = benchmark_gauss_tridiagonal(n)
 
     tic;
     cholesky_solve(A, f);
-    t1 = toc;
+    t_cholesky = toc;
 
     tic;
     gauss_tridiagonal(a, b, c, f);
-    t2 = toc;
+    t_tridiagonal = toc;
 end
 
 %!test
 %! source 16.11.2017/benchmark_gauss_tridiagonal.m;
 %!
-%! [t1 t2] = arrayfun(@benchmark_gauss_tridiagonal, 20:20:100);
+%! [t_cholesky t_tridiagonal] = arrayfun(@benchmark_gauss_tridiagonal, 20:20:100);
 %!
-%! assert(t2 < t1); % Verify that the tridiagonal algorithm always runs faster
+%! assert(t_tridiagonal < t_cholesky); % Verify that the tridiagonal algorithm always runs faster
