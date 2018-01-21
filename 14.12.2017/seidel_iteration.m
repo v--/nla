@@ -5,13 +5,13 @@ function [x iter_count] = seidel_iteration(A, b, x_initial, tolerance, max_itera
     err = 1.0;
     iter_count = 0;
 
-    while err > tolerance && iter_count < max_iterations
+    while and(err > tolerance, iter_count < max_iterations)
         for i = 1:n
             x_new(i) = (b(i) - A(i, 1:i - 1) * x_new(1:i - 1) - A(i, i + 1:n) * x_old(i + 1:n)) / A(i, i);
         end
 
         err = norm(x_new - x_old) / norm(x_new);
-        iter_count += 1;
+        iter_count++;
         x_old = x_new;
     end
 
