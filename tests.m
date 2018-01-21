@@ -24,3 +24,7 @@ test 14.12.2017/jacobi_iteration;
 test 14.12.2017/seidel_iteration;
 
 test 21.12.2017/benchmark_seidel;
+
+test 11.01.2018/ls_cholesky;
+test 11.01.2018/ls_qr;
+test 11.01.2018/benchmark_ls;
