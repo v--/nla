@@ -28,3 +28,5 @@ test 21.12.2017/benchmark_seidel;
 test 11.01.2018/ls_cholesky;
 test 11.01.2018/ls_qr;
 test 11.01.2018/benchmark_ls;
+
+test 18.01.2018/jacobi_eigenvalues;
