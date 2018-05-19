@@ -12,8 +12,6 @@ function[L] = cholesky(A)
 end
 
 %!test
-%! source 09.11.2017/cholesky.m;
-%!
 %! M = rand(3);
 %! A = M' * M;
 %! L = cholesky(A);

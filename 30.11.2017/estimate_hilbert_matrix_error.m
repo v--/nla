@@ -19,8 +19,6 @@ function[actual, estimate] = estimate_hilbert_matrix_error(n)
 end
 
 %!test
-%! source 30.11.2017/estimate_hilbert_matrix_error.m;
-%!
 %! % Elements get too small for larger matrices and they become hard to invert.
 %! [actual, estimate] = arrayfun(@estimate_hilbert_matrix_error, 3:11);
 %! assert(actual <= estimate); % This is a theoretic inequality

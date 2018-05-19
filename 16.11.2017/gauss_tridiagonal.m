@@ -23,8 +23,6 @@ function[x] = gauss_tridiagonal(a, b, c, f)
 end
 
 %!test
-%! source 16.11.2017/gauss_tridiagonal.m;
-%!
 %! a = [-1 -1];
 %! b = [2 2 2];
 %! c = [-1 -1];

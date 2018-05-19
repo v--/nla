@@ -34,8 +34,6 @@ function[e V iter_count] = jacobi_eigenvalues(A, sigma_initial, tolerance, max_i
 end
 
 %!test
-%! source 18.01.2018/jacobi_eigenvalues.m;
-%!
 %! A = [2 -1 0; -1 2 -1; 0 -1 2];
 %!
 %! [e V iterations] = jacobi_eigenvalues(A, 1000, 1e-14, 1000);

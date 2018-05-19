@@ -19,8 +19,6 @@ function[x] = gauss(A, b)
 end
 
 %!test
-%! source 12.10.2017/gauss.m;
-%!
 %! A = [1 4 7; 2 5 8; 3 6 10];
 %! b = [1; 1; 1];
 %! x = gauss(A, b);

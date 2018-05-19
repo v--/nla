@@ -1,5 +1,3 @@
-source 07.12.2017/estimate_growth_factor.m;
-
 function[growth] = high_growth_factor(n)
     % A is a matrix of the form
     %   1   0   0   0   1
@@ -12,8 +10,6 @@ function[growth] = high_growth_factor(n)
 end
 
 %!test
-%! source 07.12.2017/high_growth_factor.m;
-%!
 %! % Verify that the growth factor of these matrices reaches the upper bound of 2^(n - 1).
 %! sizes = 10:10:100;
 %! growth = arrayfun(@high_growth_factor, sizes);

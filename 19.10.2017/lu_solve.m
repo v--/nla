@@ -1,5 +1,3 @@
-source 19.10.2017/lu_decompose.m;
-
 function[x] = lu_solve(A, b)
     n = length(A);
     [L U] = lu_decompose(A);
@@ -16,8 +14,6 @@ function[x] = lu_solve(A, b)
 end
 
 %!test
-%! source 19.10.2017/lu_solve.m;
-%!
 %! A = [1 4 7; 2 5 8; 3 6 10];
 %! b = [1; 1; 1];
 %! x = lu_solve(A, b);

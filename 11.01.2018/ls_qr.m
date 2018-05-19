@@ -7,8 +7,6 @@ function[x] = ls_qr(A, b)
 end
 
 %!test
-%! source 11.01.2018/ls_qr.m;
-%!
 %! A = [3; 4];
 %! b = [3; 8];
 %!

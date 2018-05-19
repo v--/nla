@@ -1,6 +1,3 @@
-source 14.12.2017/jacobi_iteration.m;
-source 14.12.2017/seidel_iteration.m;
-
 function[iter_jacobi iter_seidel] = benchmark_seidel(n, diagonal)
     A = diag(diagonal * ones(n, 1)) + diag(-ones(n - 1, 1), 1) + diag(-ones(n - 1, 1), -1);
     b = [1; zeros(n - 2, 1); 1];
@@ -14,8 +11,6 @@ function[iter_jacobi iter_seidel] = benchmark_seidel(n, diagonal)
 end
 
 %!test
-%! source 21.12.2017/benchmark_seidel.m;
-%!
 %! # First, verify that Seidel's algorithm is more efficient than Jacobi's
 %! [iter_jacobi iter_seidel] = arrayfun(@(n) benchmark_seidel(n, 2), 2:6);
 %! assert(iter_seidel < iter_jacobi);

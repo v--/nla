@@ -19,8 +19,6 @@ function [x iter_count] = jacobi_iteration(A, b, x_initial, tolerance, max_itera
 end
 
 %!test
-%! source 14.12.2017/jacobi_iteration.m;
-%!
 %! A = [2 -1 0; -1 2 -1; 0 -1 2];
 %! b = [1; 0; 1];
 %!

@@ -12,8 +12,6 @@ function[L U] = lu_decompose(A)
 end
 
 %!test
-%! source 19.10.2017/lu_decompose.m;
-%!
 %! A = [1 4 7; 2 5 8; 3 6 10];
 %! [L U] = lu_decompose(A);
 %!
